@@ -3,8 +3,8 @@
 %bcond_with	tests	# perform "make test" (requires working $DISPLAY)
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	Time
-%define	pnam	Beat
+%define		pdir	Time
+%define		pnam	Beat
 Summary:	Time::Beat perl module
 Summary(pl):	Modu³ perla Time::Beat
 Name:		perl-Time-Beat
