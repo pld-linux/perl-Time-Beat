@@ -1,12 +1,11 @@
+%include	/usr/lib/rpm/macros.perl
 %define	pdir	Time
 %define	pnam	Beat
-%include	/usr/lib/rpm/macros.perl
 Summary:	Time-Beat perl module
 Summary(pl):	Modu³ perla Time-Beat
 Name:		perl-Time-Beat
 Version:	1.02
-Release:	5
-
+Release:	6
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -23,7 +22,7 @@ Time-Beat pozwala na konwersjê czasu w sandardowym formacie na format
 'swatcha'.
 
 %prep
-%setup -q -n Time-Beat-%{version}
+%setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
 perl Makefile.PL
