@@ -1,8 +1,8 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Time
 %define	pnam	Beat
-Summary:	Time-Beat perl module
-Summary(pl):	Modu³ perla Time-Beat
+Summary:	Time::Beat perl module
+Summary(pl):	Modu³ perla Time::Beat
 Name:		perl-Time-Beat
 Version:	1.02
 Release:	6
@@ -15,10 +15,10 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Time-Beat allows to convert from standard time to swatch 'beat' time.
+Time::Beat allows to convert from standard time to swatch 'beat' time.
 
 %description -l pl
-Time-Beat pozwala na konwersjê czasu w sandardowym formacie na format
+Time::Beat pozwala na konwersjê czasu w sandardowym formacie na format
 'swatcha'.
 
 %prep
