@@ -1,3 +1,7 @@
+#
+# Conditional build:
+%bcond_with	tests	# perform "make test" (requires working $DISPLAY)
+#
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Time
 %define	pnam	Beat
@@ -6,10 +10,11 @@ Summary(pl):	Modu³ perla Time::Beat
 Name:		perl-Time-Beat
 Version:	1.21
 Release:	1
-License:	GPL
+License:	distributable
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	effbcb318952fe3ed876200ec22626d6
+Source1:	cc-license.html
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRequires:	perl-devel >= 5.6
 BuildArch:	noarch
@@ -30,15 +35,20 @@ Time::Beat pozwala na konwersjê czasu w sandardowym formacie na format
 	INSTALLDIRS=vendor
 %{__make}
 
+%{?with_tests:%{__make} test}
+
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%{__make} install DESTDIR=$RPM_BUILD_ROOT
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT
+install %{SOURCE1} LICENSE
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
+%doc LICENSE
 %{perl_vendorlib}/Time/Beat.pm
 %{_mandir}/man3/*
