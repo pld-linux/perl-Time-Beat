@@ -24,7 +24,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Time::Beat allows to convert from standard time to swatch 'beat' time.
 
 %description -l pl
-Time::Beat pozwala na konwersjê czasu w sandardowym formacie na format
+Time::Beat pozwala na konwersjê czasu w standardowym formacie na format
 'swatcha'.
 
 %prep
