@@ -26,7 +26,7 @@ Time-Beat pozwala na konwersjê czasu w sandardowym formacie na format
 
 %build
 perl Makefile.PL
-make
+%{__make}
 
 %install
 rm -rf $RPM_BUILD_ROOT
