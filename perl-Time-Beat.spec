@@ -3,7 +3,7 @@ Summary:	Time-Beat perl module
 Summary(pl):	Modu³ perla Time-Beat
 Name:		perl-Time-Beat
 Version:	1.02
-Release:	2
+Release:	3
 License:	GPL
 Group:		Development/Languages/Perl
 Group(de):	Entwicklung/Sprachen/Perl
