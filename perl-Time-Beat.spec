@@ -27,7 +27,7 @@ Time::Beat pozwala na konwersjê czasu w sandardowym formacie na format
 
 %build
 %{__perl} Makefile.PL \
-	INSTALLDIRS=vendor 
+	INSTALLDIRS=vendor
 %{__make}
 
 %install
