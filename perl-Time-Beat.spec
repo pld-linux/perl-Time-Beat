@@ -6,7 +6,7 @@
 %define		pdir	Time
 %define		pnam	Beat
 Summary:	Time::Beat perl module
-Summary(pl):	Modu³ perla Time::Beat
+Summary(pl.UTF-8):   ModuÅ‚ perla Time::Beat
 Name:		perl-Time-Beat
 Version:	1.21
 Release:	1
@@ -23,8 +23,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 Time::Beat allows to convert from standard time to swatch 'beat' time.
 
-%description -l pl
-Time::Beat pozwala na konwersjê czasu w standardowym formacie na format
+%description -l pl.UTF-8
+Time::Beat pozwala na konwersjÄ™ czasu w standardowym formacie na format
 'swatcha'.
 
 %prep
