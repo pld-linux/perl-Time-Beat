@@ -6,7 +6,7 @@
 %define		pdir	Time
 %define		pnam	Beat
 Summary:	Time::Beat perl module
-Summary(pl.UTF-8):   Moduł perla Time::Beat
+Summary(pl.UTF-8):	Moduł perla Time::Beat
 Name:		perl-Time-Beat
 Version:	1.21
 Release:	1
