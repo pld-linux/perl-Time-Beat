@@ -9,7 +9,7 @@ Summary:	Time::Beat perl module
 Summary(pl.UTF-8):	Moduł perla Time::Beat
 Name:		perl-Time-Beat
 Version:	1.21
-Release:	1
+Release:	2
 License:	distributable
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
