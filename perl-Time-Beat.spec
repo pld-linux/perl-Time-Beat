@@ -4,7 +4,6 @@
 
 %define		pdir	Time
 %define		pnam	Beat
-%include	/usr/lib/rpm/macros.perl
 Summary:	Time::Beat perl module
 Summary(pl.UTF-8):	Moduł perla Time::Beat
 Name:		perl-Time-Beat
